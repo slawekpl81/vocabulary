@@ -10,7 +10,15 @@
     background-color: #03071e;
     text-transform: uppercase;
 }
-
+.card{
+    background-color: lightgray;
+}
+.my-shadow{
+    box-shadow: rgba(145, 142, 142, 0.6) 0px 5px 15px;
+}
+.addCart{
+    background-color: #023e8a;
+}
 img {
     max-height: 200px;
 }

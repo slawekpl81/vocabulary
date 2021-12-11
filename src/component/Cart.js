@@ -9,7 +9,7 @@ function Cart({word, removeWord, learn}) {
     useEffect(() => setShow(learn), [learn])
 
     return (
-        <div className="card m-1" style={{width: "15rem"}}>
+        <div className="card m-1 my-shadow" style={{width: "15rem"}}>
             <img src={url} className="card-img-top" alt="..."/>
             <div className="card-body d-flex flex-column justify-content-between">
                 <h5 className="card-title">

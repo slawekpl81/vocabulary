@@ -23,8 +23,8 @@ function AddCart({words, setWords}) {
         setUrl('')
     }
     return (
-        <div className="col">
-            <h2>Example heading <span className="badge bg-secondary">add word</span></h2>
+        <div className="col p-2 rounded mb-1 addCart my-shadow">
+            <h2><span className="badge bg-secondary">add word</span></h2>
             <div className="input-group input-group-sm mb-3">
 
                 <span className="input-group-text" id="inputGroup-words">words</span>
@@ -43,16 +43,6 @@ function AddCart({words, setWords}) {
                        placeholder="http://..."/>
 
             </div>
-            {/*<p><input type="text"*/}
-            {/*          value={word}*/}
-            {/*          onChange={handleInputWord}*/}
-            {/*          placeholder="'eng' 'pl'"*/}
-            {/*/></p>*/}
-            {/*<p><input type="url"*/}
-            {/*          value={url}*/}
-            {/*          onChange={handleInputUrl}*/}
-            {/*          placeholder="http://..."*/}
-            {/*/></p>*/}
             <p>
                 <button onClick={handleSave}
                         className="btn btn-primary m-1"
