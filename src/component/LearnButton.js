@@ -9,7 +9,7 @@ function LearnButton({learn, setLearn}) {
             <button
                 className="btn btn-info position-absolute top-50 start-50 translate-middle my-shadow"
                 onClick={handleLearning}>
-                learn
+                translate
             </button>
         </div>
 
