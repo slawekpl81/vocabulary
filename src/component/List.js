@@ -8,7 +8,7 @@ function List({words, setWords, learn}) {
     }
     return (
         <div className="row">
-            {words.map((word, ind) => <Cart key={ind}
+            {words.map((word, ind) => word && <Cart key={ind}
                                             word={word}
                                             removeWord={removeWord}
                                             learn={learn}/>

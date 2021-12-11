@@ -11,16 +11,21 @@ function AddCart({words, setWords}) {
     }
     const handleSave = () => {
         let temp
-        if (word.length > 0)
+        if (word.length > 0) {
             temp = word + ' ' + url
 
-        setWords([...words, temp])
-        setWord('')
-        setUrl('')
+            setWords([...words, temp])
+            setWord('')
+            setUrl('')
+        }
     }
     const handleClear = () => {
         setWord('')
         setUrl('')
+    }
+    const handlePasteFromClipboard = () => {
+        navigator.clipboard.readText()
+            .then(text => setUrl(text))
     }
     return (
         <div className="col p-2 rounded mb-1 addCart my-shadow">
@@ -41,7 +46,10 @@ function AddCart({words, setWords}) {
                        value={url}
                        onChange={handleInputUrl}
                        placeholder="http://..."/>
-
+                <button className="btn btn-secondary"
+                        onClick={handlePasteFromClipboard}
+                >paste url
+                </button>
             </div>
             <p>
                 <button onClick={handleSave}

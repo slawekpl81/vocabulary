@@ -10,19 +10,29 @@
     background-color: #03071e;
     text-transform: uppercase;
 }
-.card{
+
+.card {
     background-color: lightgray;
 }
-.my-shadow{
+
+.my-shadow {
     box-shadow: rgba(145, 142, 142, 0.6) 0px 5px 15px;
+    transition: .2s;
 }
-.addCart{
+
+.my-shadow:hover {
+    box-shadow: rgba(225, 221, 221, 0.6) 0px 5px 15px;
+}
+
+.addCart {
     background-color: #023e8a;
 }
+
 img {
     max-height: 200px;
 }
-.test-icon:hover{
+
+.test-icon:hover {
     cursor: pointer;
 }
 
