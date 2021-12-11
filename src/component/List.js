@@ -1,10 +1,18 @@
 import React from 'react';
 import Cart from "./Cart";
 
-function List({words}) {
+function List({words, setWords, learn}) {
+    const removeWord = eng => {
+        let temp = words.filter(word => word.split(' ')[0] !== eng)
+        setWords(temp)
+    }
     return (
-        <div>
-            {words.map((word, ind) => <Cart key={ind} word={word}/>)}
+        <div className="row">
+            {words.map((word, ind) => <Cart key={ind}
+                                            word={word}
+                                            removeWord={removeWord}
+                                            learn={learn}/>
+            )}
         </div>
     );
 }

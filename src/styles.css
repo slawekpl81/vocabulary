@@ -1,39 +1,16 @@
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: "Roboto Light";
     box-sizing: border-box;
 }
 
-.App{
+.App {
     min-height: 100vh;
     background-color: #03071e;
     text-transform: uppercase;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-justify-content: flex-start;
-}
-.addCart{
-    color:#ffba08;
-    background-color: #6a040f;
-    padding: 2%;
-    width: 200px;
-    border-radius: 5px;
-    margin: 10px;
-}
-button{
-    background-color: #e85d04;
-    padding: 3px;
-    border-radius: 3px;
-    text-transform: uppercase;
 }
 
-.cart{
-    color:#ffba08;
-    background-color: #6a040f;
-    padding: 2%;
-    width: 200px;
-    border-radius: 5px;
-    margin: 10px;
+img {
+    max-height: 200px;
 }

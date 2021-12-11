@@ -2,15 +2,22 @@ import React, {useState} from "react";
 import './styles.css';
 import AddCart from "./component/AddCart";
 import List from "./component/List";
+import LearnButton from "./component/LearnButton";
+import Row from "./component/Row";
 
 function App() {
     const [words, setWords] = useLocalStorage('words', []);
-    const [learn, setLearn]=useState(true)
+    const [learn, setLearn] = useState(true)
 
     return (
         <div className="App">
-            <AddCart words={words} setWords={setWords}/>
-            <List words={words}/>
+            <div className="container">
+                <Row>
+                    <AddCart words={words} setWords={setWords}/>
+                    <LearnButton learn={learn} setLearn={setLearn}/>
+                </Row>
+                <List words={words} setWords={setWords} learn={learn}/>
+            </div>
         </div>
     );
 }
